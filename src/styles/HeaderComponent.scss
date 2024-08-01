@@ -26,6 +26,7 @@
         height: auto;
         transform: rotate(-20deg);
         filter: drop-shadow(0px 0px 8px rgba(66, 68, 90, 1));
+        animation: bouncingLogo 2s infinite linear;
       }
 
       &__title {
@@ -58,5 +59,17 @@
         gap: 2rem;
       }
     }
+  }
+}
+
+@keyframes bouncingLogo {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0%);
   }
 }
