@@ -8,7 +8,7 @@ export default function GameCardComponent({func, pokemonUrl, id}) {
 
     useEffect(() => {
         ApiCall.getPokemon(pokemonUrl, setPokemonData);
-    }, [pokemonUrl]);
+    }, []);
 
     return (
         <div className="game-card" onClick={func} data-id={id}>
