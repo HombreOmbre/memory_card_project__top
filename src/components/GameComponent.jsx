@@ -5,7 +5,7 @@ import GameCardComponent from "./GameCardComponent.jsx";
 export default function GameComponent({ pokemons, score, setScore, bestScore, setBestScore }) {
     const [clickedPokemons, setClickedPokemons] = useState([]);
     const shuffle = (array) => array.sort(() => Math.random() - 0.5);
-    let shuffledArray = pokemons.length > 0 ? pokemons/*shuffle(pokemons)*/ : [];
+    let shuffledArray = pokemons.length > 0 ? shuffle(pokemons) : [];
 
     const checkBestScore = (tmpScore) => {
         if (tmpScore > bestScore) {
@@ -37,7 +37,7 @@ export default function GameComponent({ pokemons, score, setScore, bestScore, se
     }
 
     return (
-      <div className="game-component-container">
+      <main className="game-component-container">
           <div className="game-component-container__instruction">
               Get points by clicking on an image but don&apos;t click on any more than once!
           </div>
@@ -63,6 +63,6 @@ export default function GameComponent({ pokemons, score, setScore, bestScore, se
                       Loading...
                   </div>
           }
-      </div>
+      </main>
   )
 }
