@@ -1,5 +1,5 @@
 import pokeballImg from '../assets/pokeball.svg';
-import '../styles/HeaderCompontent.scss'
+import '../styles/HeaderComponent.scss';
 
 export default function HeaderComponent({score, bestScore}) {
     return (
