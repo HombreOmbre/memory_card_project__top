@@ -1,0 +1,34 @@
+.footer-component {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6b615b;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(320px, 100%, 1440px);
+    padding: 1rem;
+    gap: .5rem;
+
+    & p > span {
+      font-size: 1.5rem;
+    }
+
+    & a {
+      transition: all .4s ease-in-out;
+    }
+
+    & a:hover {
+      transform: scale(1.2) rotate(720deg);
+    }
+
+    &__logo {
+      max-width: 2.5rem;
+      height: auto;
+    }
+  }
+}
