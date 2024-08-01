@@ -1,0 +1,14 @@
+@import './reset.scss';
+
+@font-face {
+  font-family: KodeMono;
+  src: url("../assets/KodeMono-Regular.ttf") format("truetype");
+}
+
+html {
+  font-family: KodeMono;
+  font-size: 16px;
+  font-weight: 500;
+  background: #1e1e1e;
+  color: #eee;
+}
