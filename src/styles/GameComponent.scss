@@ -2,23 +2,27 @@
   width: clamp(320px, 100%, 1440px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 1rem;
+  background: #50a04a;
+  border-top: 2px solid #1e1e1e;
+  border-bottom: 2px solid #1e1e1e;
+  flex: 1;
 
   &__instruction {
     padding: 1rem;
     align-self: start;
     color: #1e1e1e;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   &__gameboard {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 3rem;
     padding: .8rem 3rem;
     justify-items: center;
 
