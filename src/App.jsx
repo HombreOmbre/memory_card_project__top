@@ -23,15 +23,13 @@ export default function App() {
                 score={score}
                 bestScore={bestScore}
             />
-            <main className='app-container__section'>
-                <GameComponent
-                    pokemons={pokemons}
-                    score={score}
-                    setScore={setScore}
-                    bestScore={bestScore}
-                    setBestScore={setBestScore}
-                />
-            </main>
+            <GameComponent
+                pokemons={pokemons}
+                score={score}
+                setScore={setScore}
+                bestScore={bestScore}
+                setBestScore={setBestScore}
+            />
             <FooterComponent />
         </div>
     );
